@@ -4,7 +4,9 @@ html {
 }
 /* BOX MODEL */
 #page-home {
+    height: 100vh;
     background: url(../extras-aula-1/extras-aula-1/icones/home-background.svg) no-repeat;
+    background-position: 35vw bottom;
 }
 
 #page-homem .header {
