@@ -24,34 +24,28 @@ body {
 a {
     text-decoration: none;
 }
-
 #page-home {
     height: 100vh;
     background: url(../extras-aula-1/extras-aula-1/icones/home-background.svg) no-repeat;
     background-position: 35vw bottom;
-  
 }
-
 #page-home header {
     margin-top: 48px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
 #page-home header a {
     display: flex;
     color: var(--title-color);
     font-weight: 700;
 }
-
 #page-home header a span {
     margin-right: 16px;
     background-image: url(../extras-aula-1/extras-aula-1/icones/log-in.svg);
     width: 20px;
     height: 20px;
     display: flex;
-
 }
 #page-home .content {
     width: 90%;
@@ -61,6 +55,7 @@ a {
     display: flex;
     flex-direction: column;
 }
+
 #page-home main {
     max-width: 560px;
     flex: 1;
@@ -71,16 +66,12 @@ a {
 #page-home main h1{
     color: var(--title-color);
 }
-
 #page-home main p{
     font-size: 24px;
     line-height: 38px;
     margin-top: 24px;
 
 }
-/*.red {
-    background-color: red;
-}*/
 
 #page-home main a {
     width: 100%;
@@ -88,14 +79,29 @@ a {
     background-color: var(--primary-color);
     height: 72px;
     border-radius: 8px;
-    color: var(--title-color);
     display: flex;
     align-items: center;
     margin-top: 40px;
     transition: 400ms;
-    
+    /*font-weight: bold;*/
+    color: white;
 }
 #page-home main a:hover {
     background-color: #2fb86e;
+
+}
+#page-home main a span {
+    width: 72px;
+    height: 72px;
+    background-color: rgba(0,0,0,0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#page-home main a span::after {
+    content:"";
+    background-image: url(../extras-aula-1/extras-aula-1/icones/search.svg);
+    width: 20px;
+    height: 20px;
 
 }
