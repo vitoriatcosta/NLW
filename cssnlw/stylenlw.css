@@ -19,7 +19,7 @@ h1, h2, h3, h4, h5, h6 {
 body {
     background-color: #f0f0f5;
     -webkit-font-smoothing: antialiased;
-    }
+}
 
 a {
     text-decoration: none;
@@ -27,13 +27,17 @@ a {
 #page-home {
     height: 100vh;
     background: url(../extras-aula-1/extras-aula-1/icones/home-background.svg) no-repeat;
-    background-position: 35vw bottom;
+    background-position: 34vw bottom;
+    background-position-y: 200px;
 }
 #page-home header {
     margin-top: 48px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+#page-home header h1 {
+    font-weight: bold;
 }
 #page-home header a {
     display: flex;
@@ -107,5 +111,26 @@ a {
 
 #page-home main a strong {
     color: white;
+    flex: 1;
     text-align: center;
+}
+
+@media (max-width: 900px) {
+    #page-home {
+        background-position-x: 70vw;
+    }
+    #page-home content {
+        align-items: center;
+        text-align: center;
+    };
+    #page-home header {
+        position: absolute;
+        bottom: 48px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #page-home main {
+        align-items: center;
+
+    }
 }
